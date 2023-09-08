@@ -1,0 +1,22 @@
+[package]
+name = "try-dfdx"
+version = "0.1.0"
+edition = "2021"
+authors = ["wybxc <wybxc@qq.com>"]
+description = "try dfdx"
+license = "Apache-2.0"
+repository = ""
+rust-version = "1.70.0"
+readme = "README.md"
+exclude = ["flake.nix", "flake.lock", ".github/"]
+
+[dependencies]
+byteorder = "1.4.3"
+clap = { version = "4.4.2", features = ["derive"] }
+dfdx = { version = "0.13.0", features = ["nightly", "safetensors"] }
+env_logger = { version = "0.10.0", default-features = false, features = ["auto-color", "color", "humantime"] }
+eyre = "0.6.8"
+flate2 = "1.0.27"
+indicatif = "0.17.6"
+log = "0.4.20"
+rand = "0.8.5"
